@@ -531,4 +531,9 @@ main{
     #section2 ul li>div .section2-title h2{font-size: 18px;}
     #section2 ul li>div .section2-content p{line-height: 1.4;}
     .galleryWrap li{width: 100%;}
+
+    #section3{padding: 20px 0;}
+    .filter-form .form-item label{
+        padding: 16px;
+    }
 }
