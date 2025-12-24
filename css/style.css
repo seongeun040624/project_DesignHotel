@@ -424,10 +424,10 @@ main{width: 100%;}
 .currency .currencys{
     display: none;
     position: absolute;
-    top: -158px; left: -1px;
+    top: -156px; left: -1px;
     background: #ddd;
     padding: 20px;
-    width: 104px;
+    width: 110px;
 }
 .currency .currencys div ul li{line-height: 180%;}
 .currency .currencys div ul li a{color: #333;}
