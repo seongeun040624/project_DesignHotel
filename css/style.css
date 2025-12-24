@@ -62,17 +62,11 @@ a{color: #fff; text-decoration: none;}
     height: 50px;
     line-height: 50px;
 }
-.mobileList .mobileNav ul li a{
-    color: #fff;
-}
-.mobileList .mobileNav ul li:nth-child(3) a{
-    color: rgb(255, 139, 62);
-}
+.mobileList .mobileNav ul li a{color: #fff;}
+.mobileList .mobileNav ul li:nth-child(3) a{color: rgb(255, 139, 62);}
 
 
-.mobileFooter{
-    margin-top: 20px;
-}
+.mobileFooter{margin-top: 20px;}
 .mobileFooter p{
     color: #acacac;
     margin-bottom: 20px;
@@ -104,9 +98,7 @@ a{color: #fff; text-decoration: none;}
     transition: background .3s ease;
 }
 
-#header.on{
-    background: rgba(0, 0, 0, .8);
-}
+#header.on{background: rgba(0, 0, 0, .8);}
 
 #header .inner{
     display: flex;
@@ -114,6 +106,8 @@ a{color: #fff; text-decoration: none;}
     align-items: center; /* 높이값 안 적어줘도 되네 */
 }
 #header .inner .navWrap{position: relative;}
+
+
 #header .inner .navWrap .gnb{
     position: absolute;
     top: -20px; right: 0;
@@ -130,9 +124,7 @@ a{color: #fff; text-decoration: none;}
     top: 3px; right: -5px;
 }
 
-#header .inner .navWrap #nav{
-    margin-top: 10px;
-}
+#header .inner .navWrap #nav{margin-top: 10px;}
 #nav ul{
     display: flex;
     gap: 10px;
@@ -140,9 +132,11 @@ a{color: #fff; text-decoration: none;}
 #nav ul li a:hover{text-decoration: underline;}
 
 
-main{
-    width: 100%;
-}
+main{width: 100%;}
+
+
+
+/* sec1 */
 #section1{
     width: 100%;
     position: relative;
@@ -178,16 +172,15 @@ main{
     align-items: center;
     justify-content: center;
 }
-.m-icon-footer ul li.add{
-    background: rgba(255, 255, 255, .4);
-}
+.m-icon-footer ul li.add{background: rgba(255, 255, 255, .4);}
 
 
 
+
+/* sec2 */
 #section2{
     width: 100%;
     background-image: linear-gradient(to right, #4f4f4f, #4f4f4f 50%, rgb(26, 60, 8) 50%);
-
 }
 #section2 ul{display: flex;}
 #section2 ul li{flex-basis: 50%;}
@@ -201,14 +194,14 @@ main{
     font-size: 24px;
     padding-bottom: 5px;
 }
-
-
 #section2 ul li>div .section2-content p{
     line-height: 1.6;
 }
 
 
 
+
+/* sec3 */
 #section3{
     width: 100%;
     height: 800px;
@@ -256,6 +249,9 @@ main{
     position: absolute;
 }
 
+
+
+
 #section4{width: 100%;}
 #section4>div{width: 100%;}
 
@@ -285,12 +281,7 @@ main{
 }
 
 
-.gallery{
-    width: 100%;
-    /* height: 800px; */
-    /* background: red; */
-}
-
+.gallery{ width: 100%;}
 
 .galleryWrap{
     display: flex;
@@ -303,9 +294,7 @@ main{
     overflow: hidden;
     position: relative;
 }
-.galleryWrap li div{
-    width: 100%;
-}
+.galleryWrap li div{width: 100%;}
 .galleryWrap li div a{
     display: block;
     position: relative;
@@ -380,6 +369,8 @@ main{
 }
 
 
+
+
 #footer{
     display: flex;
     justify-content: space-between;
@@ -387,18 +378,9 @@ main{
     background: #5b5b5b;
 }
 
-.copy_footerMenu{
-    display: flex;
-}
-.copy_footerMenu h2{
-    margin-right: 30px;
-}
-.copy_footerMenu h2 a{
-    /* display: block;
-    width: 60px;
-    height: 60px; */
-    display: flex;
-}
+.copy_footerMenu{display: flex;}
+.copy_footerMenu h2{margin-right: 30px;}
+.copy_footerMenu h2 a{display: flex;}
 .copy_footerMenu h2 a img{
     width: 60px;
     margin-right: 10px;
@@ -414,10 +396,7 @@ main{
     display: flex;
     gap: 20px;
 }
-.footerMenu ul{}
-.footerMenu ul li{
-    line-height: 180%;
-}
+.footerMenu ul li{line-height: 180%;}
 .footerMenu ul li a{color: rgba(255, 255, 255, .6);}
 
 
@@ -434,7 +413,6 @@ main{
     position: relative;
     width: 110px;
 }
-.currency_sns .currency span{}
 .currency_sns .currency>a{
     margin-left: 5px;
     display: inline-block;
@@ -451,14 +429,10 @@ main{
     padding: 20px;
     width: 104px;
 }
-.currency .currencys div{}
-.currency .currencys div ul{}
 .currency .currencys div ul li{line-height: 180%;}
 .currency .currencys div ul li a{color: #333;}
 
 
-.sns{}
-.sns div{}
 .sns div ul{
     display: flex;
     gap: 20px;
@@ -474,13 +448,14 @@ main{
 .sns div ul li.linke{background: url(../img/linkedin.svg) no-repeat;}
 .sns div ul li.spot{background: url(../img/spotify.svg) no-repeat;}
 
-.sns div ul li a{}
+
 
 
 
 
 @media screen and (max-width: 1200px) {
     #header .inner{padding: 0 20px;}
+
     #footer{
         display: flex;
         flex-direction: column;
@@ -496,9 +471,11 @@ main{
     .currency_sns .currency{order: 1;}
 }
 
+
 @media screen and (max-width: 1024px) {
     #header .inner{display: none;}
     .mobileHeader{display: block;}
+    #header.on{background: none;}
     .m-icon-footer{padding: 0 20px;}
 
     #section2{
@@ -526,14 +503,22 @@ main{
 
 @media screen and (max-width: 568px) {
     #section2 ul li>div{padding: 40px 20px;}
+    #section3 h2{margin-top: 25px;}
+    .m-icon-footer{padding: 0;}
 
     #section2 ul li>div .section2-title{margin-bottom: 20px;}
     #section2 ul li>div .section2-title h2{font-size: 18px;}
     #section2 ul li>div .section2-content p{line-height: 1.4;}
     .galleryWrap li{width: 100%;}
 
-    #section3{padding: 20px 0;}
-    .filter-form .form-item label{
-        padding: 16px;
+    #section3{
+        padding: 20px 0;
+        height: 650px;
     }
+
+    .loadMore{
+        padding: 50px 0;
+    }
+
+    .filter-form .form-item label{padding: 16px;}
 }
